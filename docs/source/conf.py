@@ -14,16 +14,28 @@ html_theme = "sphinx_rtd_theme"
 # -- General configuration
 
 extensions = [
-    'sphinx.ext.duration',
-    'sphinx.ext.doctest',
-    'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary',
-    'sphinx.ext.intersphinx',
-    'sphinx.ext.autosectionlabel',
-    # 'sphinxcontrib.httpdomain',
-    # 'sphinx_tabs.tabs',
-    # 'sphinx-prompt',
-
+    # 'sphinx.ext.duration',
+    # 'sphinx.ext.doctest',
+    # 'sphinx.ext.autodoc',
+    # 'sphinx.ext.autosummary',
+    # 'sphinx.ext.intersphinx',
+    # 'sphinx.ext.autosectionlabel',
+    "multiproject",
+    "sphinx.ext.autosectionlabel",
+    "sphinx.ext.autodoc",
+    "sphinx.ext.intersphinx",
+    "sphinxcontrib.httpdomain",
+    "sphinxcontrib.video",
+    "djangodocs",
+    "doc_extensions",
+    "sphinx_tabs.tabs",
+    "sphinx-prompt",
+    "notfound.extension",
+    "hoverxref.extension",
+    "sphinx_search.extension",
+    "sphinxemoji.sphinxemoji",
+    "sphinx_design",
+    "myst_parser",
 ]
 
 intersphinx_mapping = {
