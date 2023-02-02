@@ -51,8 +51,8 @@ API
       }
 
 
-患者所有数据
-----------
+患者所有记录数据
+--------------
 
 .. http:get:: /api/patient/(str:patient_sn)
 
@@ -135,3 +135,174 @@ API
          ]
       }
 
+
+患者决策树数据
+------------
+
+.. http:get:: /api/decisiontree/(str:patient_sn)
+
+   根据患者ID返回患者所有的阶段及其每个阶段的决策树数据。
+
+   :query string patient_sn: 患者id
+   :requestheader Authorization: `token`
+
+   .. important::
+      The author name must be in URL encoded format.
+
+   **Example request**:
+
+   .. tabs::
+
+      .. code-tab:: bash
+
+         $ curl -H "Authorization: Token <token>" http://<server_address>>/api/decisiontree/(str:patient_sn)
+
+      .. code-tab:: python
+
+         import requests
+         URL = 'http://<server_address>>/api/decisiontree/(str:patient_sn)'
+         TOKEN = '<token>'
+         HEADERS = {'Authorization': f'Token {TOKEN}'}
+         response = requests.get(URL, headers=HEADERS)
+         print(response.json())
+
+   **Example response**:
+
+   .. sourcecode:: json
+
+      {
+         "id": "患者id",
+         "info": {
+         },
+         "records": [
+         ]
+      }
+
+
+所有记录统计数据
+-------------
+
+.. http:get:: /api/records_summary
+
+   返回数据库中所有记录的总结统计数据。
+
+   :requestheader Authorization: `token`
+
+   **Example request**:
+
+   .. tabs::
+
+      .. code-tab:: bash
+
+         $ curl -H "Authorization: Token <token>" http://<server_address>>/api/records_summary
+
+      .. code-tab:: python
+
+         import requests
+         URL = 'http://<server_address>>/api/records_summary'
+         TOKEN = '<token>'
+         HEADERS = {'Authorization': f'Token {TOKEN}'}
+         response = requests.get(URL, headers=HEADERS)
+         print(response.json())
+
+   **Example response**:
+
+   .. sourcecode:: json
+
+      <html></html>
+
+所有患者统计数据
+-------------
+
+.. http:get:: /api/patients_summary
+
+   返回数据库中所有患者相关的总结统计数据。
+
+   :requestheader Authorization: `token`
+
+   **Example request**:
+
+   .. tabs::
+
+      .. code-tab:: bash
+
+         $ curl -H "Authorization: Token <token>" http://<server_address>>/api/patients_summary
+
+      .. code-tab:: python
+
+         import requests
+         URL = 'http://<server_address>>/api/patients_summary'
+         TOKEN = '<token>'
+         HEADERS = {'Authorization': f'Token {TOKEN}'}
+         response = requests.get(URL, headers=HEADERS)
+         print(response.json())
+
+   **Example response**:
+
+   .. sourcecode:: json
+
+      <html></html>
+
+患者第一次治疗前状态统计数据
+------------------------
+
+.. http:get:: /api/patients_status
+
+   返回数据库中所有患者在第一次治疗前的状态统计数据。
+
+   :requestheader Authorization: `token`
+
+   **Example request**:
+
+   .. tabs::
+
+      .. code-tab:: bash
+
+         $ curl -H "Authorization: Token <token>" http://<server_address>>/api/patients_status
+
+      .. code-tab:: python
+
+         import requests
+         URL = 'http://<server_address>>/api/patients_status'
+         TOKEN = '<token>'
+         HEADERS = {'Authorization': f'Token {TOKEN}'}
+         response = requests.get(URL, headers=HEADERS)
+         print(response.json())
+
+   **Example response**:
+
+   .. sourcecode:: json
+
+      <html></html>
+
+治疗操作相关统计数据
+-----------------
+
+.. http:get:: /api/other_variables_statistics
+
+   返回数据库中所有治疗操作相关的总结统计数据。
+
+   :requestheader Authorization: `token`
+
+   **Example request**:
+
+   .. tabs::
+
+      .. code-tab:: bash
+
+         $ curl -H "Authorization: Token <token>" http://<server_address>>/api/other_variables_statistics
+
+      .. code-tab:: python
+
+         import requests
+         URL = 'http://<server_address>>/api/other_variables_statistics'
+         TOKEN = '<token>'
+         HEADERS = {'Authorization': f'Token {TOKEN}'}
+         response = requests.get(URL, headers=HEADERS)
+         print(response.json())
+
+   **Example response**:
+
+   .. sourcecode:: json
+
+      <html></html>
