@@ -4,6 +4,10 @@ API
 .. autosummary::
    :toctree: generated
 
+.. contents:: Table of contents
+   :local:
+   :backlinks: none
+   :depth: 3
 
 Builds listing
 ++++++++++++++
