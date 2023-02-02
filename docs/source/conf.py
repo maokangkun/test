@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Ruijin Gastrointestinal CDSS'
-copyright = '2023, kangkun'
-author = 'kangkun'
+project = 'Lumache'
+copyright = '2021, Graziella'
+author = 'Graziella'
 
 release = '0.1'
 version = '0.1.0'
@@ -17,23 +17,6 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    # 'sphinx.ext.autosectionlabel',
-    # "multiproject",
-    # "sphinx.ext.autosectionlabel",
-    # "sphinx.ext.autodoc",
-    # "sphinx.ext.intersphinx",
-    "sphinxcontrib.httpdomain",
-    # "sphinxcontrib.video",
-    # "djangodocs",
-    # "doc_extensions",
-    # "sphinx_tabs.tabs",
-    # "sphinx-prompt",
-    # "notfound.extension",
-    # "hoverxref.extension",
-    # "sphinx_search.extension",
-    # "sphinxemoji.sphinxemoji",
-    # "sphinx_design",
-    # "myst_parser",
 ]
 
 intersphinx_mapping = {
