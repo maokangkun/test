@@ -61,9 +61,6 @@ API
    :query string patient_sn: 患者id
    :requestheader Authorization: `token`
 
-   .. important::
-      The author name must be in URL encoded format.
-
    **Example request**:
 
    .. tabs::
@@ -135,6 +132,8 @@ API
          ]
       }
 
+   .. warning::
+      records 数组里的记录数据里所含的字段根据不同的记录而不同.
 
 患者决策树数据
 ------------
