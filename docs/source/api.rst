@@ -9,12 +9,6 @@ API
    :backlinks: none
    :depth: 3
 
-Resources
----------
-
-Projects
-~~~~~~~~
-
 Builds listing
 ++++++++++++++
 
