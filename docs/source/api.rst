@@ -7,12 +7,56 @@ API
    :depth: 3
 
 
-Builds listing
-------------------------------
+所有患者列表
+----------
+
+.. http:get:: /api/patient_list
+
+   返回所有患者列表。
+
+   :requestheader Authorization: `token`
+
+   **Example request**:
+
+   .. tabs::
+
+      .. code-tab:: bash
+
+         $ curl -H "Authorization: Token <token>" http://<server_address>>/api/patient_list
+
+      .. code-tab:: python
+
+         import requests
+         URL = 'http://<server_address>>/api/patient_list'
+         TOKEN = '<token>'
+         HEADERS = {'Authorization': f'Token {TOKEN}'}
+         response = requests.get(URL, headers=HEADERS)
+         print(response.json())
+
+   **Example response**:
+
+   .. sourcecode:: json
+
+      {
+         "data": [
+            {
+               "cancer_type": "胃癌",
+               "first_diag_age": 73,
+               "gender": "女",
+               "patient_name": "张三",
+               "patient_sn": "xxxxxxxxxxxxxxxx",
+               "zyh": "4240897"
+            },
+         ]
+      }
+
+
+所有患者列表
+----------
 
 .. http:get:: /api/v3/projects/(str:project_slug)/builds/
 
-   Retrieve list of all the builds on this project.
+   返回所有患者列表。
 
    :query string commit: commit hash to filter the builds returned by commit
    :query boolean running: filter the builds that are currently building/running
@@ -34,7 +78,7 @@ Builds listing
          import requests
          URL = 'https://readthedocs.org/api/v3/projects/pip/builds/'
          TOKEN = '<token>'
-         HEADERS = {'Authorization': f'token {TOKEN}'}
+         HEADERS = {'Authorization': f'Token {TOKEN}'}
          response = requests.get(URL, headers=HEADERS)
          print(response.json())
 
@@ -43,12 +87,6 @@ Builds listing
    .. sourcecode:: json
 
       {
-         "count": 15,
-         "next": "/api/v3/projects/pip/builds?limit=10&offset=10",
-         "previous": null,
-         "results": ["BUILD"]
+         "data": []
       }
-
-
-
 
