@@ -46,7 +46,7 @@ API
                "patient_name": "张三",
                "patient_sn": "xxxxxxxxxxxxxxxx",
                "zyh": "4240897"
-            }, {...}
+            },
          ]
       }
 
@@ -88,13 +88,50 @@ API
       {
          "id": "患者id",
          "info": {
-            "name": "患者姓名",
-            "gender": "性别",
-            "age": "年龄",
-            "患者基本信息等": null
+            "birth_date": "",
+            "blood_type_abo": "未查",
+            "blood_type_rh": "未查",
+            "contact_name": "",
+            "contact_relationship": "",
+            "contact_telephone": "",
+            "create_at": "",
+            "credential_no": "",
+            "credential_type": "",
+            "education": "",
+            "ethnic": "",
+            "gender": "",
+            "hometown": "",
+            "marriage": "",
+            "medical_org_id": "",
+            "medical_org_name": "",
+            "nation": "",
+            "occupation_category": "",
+            "patient_name": "",
+            "patient_sn": "",
+            "telephone": "",
+            "update_at": ""
          },
          "records": [
-            {"患者所有检查记录数据"}, ...
+            {
+               "abdominal_surgery_history": 0,
+               "ae_symptom": "腹泻",
+               "bleeding": 1,
+               "cancer_family_history": 0,
+               "create_date": "",
+               "dept_name": "胃肠外一",
+               "doc_sn": "",
+               "doc_text": "",
+               "doc_type_name": "入院记录",
+               "doc_xml": "",
+               "is_ulcer": 1,
+               "liver_metastasis": "",
+               "liver_metastasis_time": "",
+               "obstruction": 1,
+               "obstruction_degree": 0,
+               "other_hospital_records": "",
+               "patient_sn": "",
+               "visit_sn": ""
+            },
          ]
       }
 
