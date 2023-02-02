@@ -1,15 +1,12 @@
-Welcome to Lumache's documentation!
+Welcome to RJGICDSS's documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**RJGICDSS** (Ruijin Gastrointestinal CDSS) is an open-source, artificial intelligence-based clinical decision support (CDS) systems.
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
 
-Lumache has its documentation hosted on Read the Docs. 12313432141234314
+Check out the :doc:`api` section for all the API's information.
 
 .. note::
 
