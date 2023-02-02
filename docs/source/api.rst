@@ -46,8 +46,7 @@ API
                "patient_name": "张三",
                "patient_sn": "xxxxxxxxxxxxxxxx",
                "zyh": "4240897"
-            },
-            ...
+            }, {...}
          ]
       }
 
@@ -95,7 +94,7 @@ API
             "患者基本信息等": null
          },
          "records": [
-            "患者所有检查记录数据"
+            {"患者所有检查记录数据"}, ...
          ]
       }
 
