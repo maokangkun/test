@@ -9,8 +9,6 @@ author = 'kangkun'
 release = '0.1'
 version = '0.1.0'
 
-html_theme = "sphinx_rtd_theme"
-
 # -- General configuration
 
 extensions = [
