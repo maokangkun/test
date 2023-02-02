@@ -170,10 +170,32 @@ API
    .. sourcecode:: json
 
       {
-         "id": "患者id",
-         "info": {
-         },
-         "records": [
+         "id": "",
+         "stages": [
+            {
+               "treatment": "",
+               "treatment_date": "",
+               "current_decision": "",
+               "decision_tree_path": [
+                  {
+                     "node_list": [],
+                     "cur_node_index": 1,
+                     "decision_variable_values": {
+                        "肿瘤部位": "胃",
+                        "cM": "M0",
+                     },
+                  },
+               ],
+               "next_decision_tree": {
+                  "node_name": "",
+                  "leaf_node": [
+                     {
+                        "node_name": "",
+                        "leaf_node": []
+                     }
+                  ]
+               }
+            },
          ]
       }
 
