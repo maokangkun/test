@@ -47,3 +47,17 @@ Builds listing
     :query string commit: commit hash to filter the builds returned by commit
     :query boolean running: filter the builds that are currently building/running
 
+
+.. warning::
+   Failing to dot your **i**s and cross your **t**s, makes the words you write difficult to read.
+
+.. http:{request method}:: {API URL Path}
+   :noindex:
+   
+     {API Description}
+	 
+   :query {data type}: {optional parmeter explantation}
+   
+   :form {data type}: {optional parmeter explantation
+   
+   :requestheader {header MIME type}:
