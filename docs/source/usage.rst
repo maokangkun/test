@@ -15,12 +15,14 @@ To use openCDS, you can simply install it from PyPI with the following command:
 If you use Anaconda or Miniconda, you can install openCDS through the following command:
 
 .. code-block:: console
+   
    (.venv) $ conda install -c openCDS openCDS
 
 Quick Start
 ----------------
 
 .. code-block:: console
+
    (.venv) $ openCDS config --dbtype mysql --host <host> --port 3306 -u <user> -p <pwd>
    (.venv) $ openCDS -h
    (.venv) $ openCDS query --id <xxx> --his --html
