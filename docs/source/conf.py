@@ -19,7 +19,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    'sphinx.ext.autosectionlabel',
+    # 'sphinx.ext.autosectionlabel',
     # "multiproject",
     # "sphinx.ext.autosectionlabel",
     # "sphinx.ext.autodoc",
