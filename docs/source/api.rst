@@ -146,7 +146,7 @@ API
    :requestheader Authorization: `token`
 
    .. important::
-      The author name must be in URL encoded format.
+      This API may be adjusted in the future.
 
    **Example request**:
 
