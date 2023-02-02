@@ -22,7 +22,7 @@ API
 
       .. code-tab:: bash
 
-         $ curl -H "Authorization: Token <token>" http://<server_address>>/api/patient_list
+         $ curl -H "Authorization: Token <token>" http://<server_address>/api/patient_list
 
       .. code-tab:: python
 
@@ -67,7 +67,7 @@ API
 
       .. code-tab:: bash
 
-         $ curl -H "Authorization: Token <token>" http://<server_address>>/api/patient/(str:patient_sn)
+         $ curl -H "Authorization: Token <token>" http://<server_address>/api/patient/(str:patient_sn)
 
       .. code-tab:: python
 
@@ -154,7 +154,7 @@ API
 
       .. code-tab:: bash
 
-         $ curl -H "Authorization: Token <token>" http://<server_address>>/api/decisiontree/(str:patient_sn)
+         $ curl -H "Authorization: Token <token>" http://<server_address>/api/decisiontree/(str:patient_sn)
 
       .. code-tab:: python
 
@@ -215,7 +215,7 @@ API
 
       .. code-tab:: bash
 
-         $ curl -H "Authorization: Token <token>" http://<server_address>>/api/records_summary
+         $ curl -H "Authorization: Token <token>" http://<server_address>/api/records_summary
 
       .. code-tab:: python
 
@@ -247,7 +247,7 @@ API
 
       .. code-tab:: bash
 
-         $ curl -H "Authorization: Token <token>" http://<server_address>>/api/patients_summary
+         $ curl -H "Authorization: Token <token>" http://<server_address>/api/patients_summary
 
       .. code-tab:: python
 
@@ -279,7 +279,7 @@ API
 
       .. code-tab:: bash
 
-         $ curl -H "Authorization: Token <token>" http://<server_address>>/api/patients_status
+         $ curl -H "Authorization: Token <token>" http://<server_address>/api/patients_status
 
       .. code-tab:: python
 
@@ -311,7 +311,7 @@ API
 
       .. code-tab:: bash
 
-         $ curl -H "Authorization: Token <token>" http://<server_address>>/api/other_variables_statistics
+         $ curl -H "Authorization: Token <token>" http://<server_address>/api/other_variables_statistics
 
       .. code-tab:: python
 
