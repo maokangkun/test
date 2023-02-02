@@ -9,6 +9,8 @@ author = 'kangkun'
 release = '0.1'
 version = '0.1.0'
 
+html_theme = "sphinx_rtd_theme"
+
 # -- General configuration
 
 extensions = [
@@ -18,9 +20,9 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'sphinx.ext.autosectionlabel',
-    'sphinxcontrib.httpdomain',
-    'sphinx_tabs.tabs',
-    'sphinx-prompt',
+    # 'sphinxcontrib.httpdomain',
+    # 'sphinx_tabs.tabs',
+    # 'sphinx-prompt',
 
 ]
 
