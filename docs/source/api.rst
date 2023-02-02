@@ -47,19 +47,19 @@ API
                "patient_sn": "xxxxxxxxxxxxxxxx",
                "zyh": "4240897"
             },
+            ...
          ]
       }
 
 
-所有患者列表
+患者所有数据
 ----------
 
-.. http:get:: /api/v3/projects/(str:project_slug)/builds/
+.. http:get:: /api/patient/(str:patient_sn)
 
-   返回所有患者列表。
+   根据患者ID返回患者所有数据。
 
-   :query string commit: commit hash to filter the builds returned by commit
-   :query boolean running: filter the builds that are currently building/running
+   :query string patient_sn: 患者id
    :requestheader Authorization: `token`
 
    .. important::
@@ -71,12 +71,12 @@ API
 
       .. code-tab:: bash
 
-         $ curl -H "Authorization: Token <token>" https://readthedocs.org/api/v3/projects/pip/builds/
+         $ curl -H "Authorization: Token <token>" http://<server_address>>/api/patient/(str:patient_sn)
 
       .. code-tab:: python
 
          import requests
-         URL = 'https://readthedocs.org/api/v3/projects/pip/builds/'
+         URL = 'http://<server_address>>/api/patient/(str:patient_sn)'
          TOKEN = '<token>'
          HEADERS = {'Authorization': f'Token {TOKEN}'}
          response = requests.get(URL, headers=HEADERS)
@@ -87,6 +87,15 @@ API
    .. sourcecode:: json
 
       {
-         "data": []
+         "id": "患者id",
+         "info": {
+            "name": "患者姓名",
+            "gender": "性别",
+            "age": "年龄",
+            "患者基本信息等": null
+         },
+         "records": [
+            "患者所有检查记录数据"
+         ]
       }
 
